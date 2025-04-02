@@ -1,0 +1,172 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered container for forms */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Placeholder text */
+input::placeholder {
+  color: #888;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Link styling for navigation between login/register */
+p {
+  text-align: center;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    margin: 20px;
+  }
+}
+
+/* Center the home page content */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure it takes the full height of the screen */
+  text-align: center;
+  background-color: #f4f4f4; /* Add a subtle background color */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for better readability */
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555; /* Lighter text for the description */
+}
+
+/* Container for the buttons */
+.button-container {
+  display: flex;
+  gap: 20px; /* Space between the buttons */
+}
+
+/* Style for the buttons */
+.home-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for buttons */
+.home-btn:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+}
+
+/* Add focus and active states for accessibility */
+.home-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+.home-btn:active {
+  background-color: #004085; /* Even darker blue on button press */
+}
+
+/* Logout Button */
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4d4d; /* Red color for logout */
+  color: white;
+  transition: background-color 0.3s ease;
+  width:10%;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.logout-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.6);
+}
+
+.logout-btn:active {
+  background-color: #990000; /* Even darker red on press */
+}
+
